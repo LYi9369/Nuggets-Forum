@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul {
+            width: 200px;
+            height: 100px;
+            padding: 30px;
+            box-sizing: border-box;
+            margin: 10% 0 0 40%;
+            background-color: #ffffff;
+        }
+
+        div {
+            display: inline-block;
+            /*line-height: 100px;*/
+            float: left;
+            margin-top: 10px;
+            margin-left: 20px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: purple;
+            /*animation: mymove 1s linear infinite alternate;*/
+        }
+
+        .div1 {
+            background-color: #398bfb;
+            animation: mymoveRight 0.9s linear infinite alternate;
+        }
+
+        .div3 {
+            background-color: #e0e0e0;
+            animation: mymoveLeft 0.9s linear infinite alternate;
+
+        }
+
+        /*第一次是从左往右移动*/
+        @keyframes mymoveRight {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(80px);
+            }
+        }
+
+        /*第一次是从右往左移动*/
+        @keyframes mymoveLeft {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-80px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<ul>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+
+</ul>
+
+</body>
+</html>
